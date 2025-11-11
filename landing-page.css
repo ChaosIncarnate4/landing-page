@@ -20,8 +20,6 @@ body {
     border:#1F2937;
     border-width: thick;
     justify-content: space-between;
-    padding-left: 300px;
-    padding-right: 300px;
 }
 
 .center {
@@ -131,29 +129,115 @@ button:active {
 }
 
 .images {
+    display:flex;
     width:100%;
     height:600px;
+    flex-direction: column;
+}
+
+.image-header {
+    display:flex;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin:50px;
+}
+
+.image-list {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+}
+
+.image-item {
+    margin: 25px;
 }
 
 .image {
-
+    width: 250px;
+    height: 250px;
+    border:#3882f6;
+    border-radius: 5px;
 }
 
-.quote {
+.caption {
+    text-align: center;
+    margin:0;
+}
+
+.quote-block {
     display:flex;
     background-color: #E5E7EB;
     width:100%;
     height:600px;
-    flex-wrap: wrap;
-    font-size:36px;
-    color:#1F2937;
-    font-weight:300px;
-    font-style:italic;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.quote {
+    /* padding-left: 100px;
+    padding-right: 100px; */
+    flex-wrap: wrap;
+    font-size:48px;
+    color:#1F2937;
+    font-weight:900px;
+    font-style:italic;
+    margin-bottom: 10px;
+    justify-self: center;
+    align-self: center;
+}
+
+.quotee {
+    display: flex;
+    font-size: 24px;
+    align-self: flex-end;
+    padding-right: 750px;
+    font-weight: bolder;
+}
+
 .sign-up {
+    display: flex;
     width:100%;
     height:600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-section {
+    display:flex;
+    flex-direction: row;
+    background-color: #3882f6;
+    width: 1500px;
+    height: 250px;
+    border-radius: 20px;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.top-down {
+    display:flex;
+    flex-direction: column;
+}
+
+.call-to-action {
+    color:#F9FAF8;
+    font-weight:bold;
+    font-size: 36px;
+}
+
+.sign-up-message {
+    color: #F9FAF8;
+    max-width: 500px;
+    margin-top:10px;
+}
+
+.sign-up-button {
+    width: 150px;
+    height: 50px;
+    border-radius:10px;
+    background-color: #3882f6;
+    border-color: #E5E7EB;
+    border-style: solid;
 }
